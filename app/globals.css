@@ -322,7 +322,7 @@ nav ul li a {
   padding: 3vh;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
-  border: solid rgb(182, 76, 209);
+  border: solid rgb(126, 20, 139);
 }
 
 .tile:hover {
