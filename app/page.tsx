@@ -10,6 +10,22 @@ export default function Home() {
   const [activeContent, setActiveContent] = useState<string>("home")
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 })
 
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      const windowWidth = window.innerWidth
+      const windowHeight = window.innerHeight
+
+      // Mirror the cursor position
+      const mirroredX = windowWidth - e.clientX
+      const mirroredY = windowHeight - e.clientY
+
+      setCursorPosition({ x: mirroredX, y: mirroredY })
+    }
+
+    document.addEventListener("mousemove", handleMouseMove)
+    return () => document.removeEventListener("mousemove", handleMouseMove)
+  }, [])
+
   const renderContent = () => {
     switch (activeContent) {
       case "about":
