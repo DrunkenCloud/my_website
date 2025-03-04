@@ -15,7 +15,6 @@ export default function Home() {
       const windowWidth = window.innerWidth
       const windowHeight = window.innerHeight
 
-      // Mirror the cursor position
       const mirroredX = windowWidth - e.clientX
       const mirroredY = windowHeight - e.clientY
 
@@ -56,7 +55,7 @@ export default function Home() {
       />
 
       <div className="header">
-        <h1 className="yuji-mai-regular">DrunkenCloud</h1>
+        <h1 className="yuji-mai-regular">Niranjhan SU</h1>
         <nav>
           <ul>
             <li>
