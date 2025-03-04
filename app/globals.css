@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #dab6fc;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.custom-cursor {
+  width: 3.5vw;
+  height: 7vh;
+  background-image: url("/images/kunai.png");
+  background-size: cover;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  transition: transform 0.2s ease;
+}
+
+.profile-image {
+  position: relative;
+  text-align: center;
+  height: 25vh;
+}
+
+.profile-photo {
+  display: flex;
+  margin: 10; 
+  border-radius: 50%;
+  width: 20vh;
+  height: 20vh;
+  object-fit: cover;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 2vh;
+  background-color: #dab6fc;
+}
+
+h1 {
+  font-size: 3vw;
+  color: #000;
+  margin: 0;
+  padding-left: 2vw;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3vw;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.4vw;
+  color: #000;
+  background-image: url("/images/cloud.png");
+  background-size: 11.0vw 7.0vw;
+  background-position: center;
+  width: 11.0vw;
+  height: 5.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+  position: relative;
+}
+
+.intro {
+  width: 30%;
+  position: absolute;
+  left: -4%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.circle {
+  background-color: #f8d0ff;
+  border-radius: 50%;
+  width: 30vw;
+  padding-bottom: 30vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+}
+
+.circle-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  width: 48vh;
+  height: 90%;
+  max-height: 80%;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.yuji-mai-regular {
+  font-family: "Yuji Mai", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.yuji-mai-regular-1 {
+  font-family: "Yuji Mai", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.sora {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.liu-jian-mao-cao-regular {
+  font-family: "Liu Jian Mao Cao", cursive;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.circle-item {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.line {
+  font-family: "Cinzel", serif;
+  font-weight: 420;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  font-optical-sizing: auto;
+  font-style: initial;
+  width: 120%;
+}
+
+.emoji {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
+.emoji-img {
+  width: 2.5vw;
+  height: 5.0vh;
+}
+
+.text {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: row;
+  font-size: 2.7vh;
+  text-align: left;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.circle p {
+  font-size: 3.2vh;
+  margin: 0;
+  position: absolute;
+  left: -5%;
+  width: 100%;
+  text-align: center;
+}
+
+.image-container {
+  flex-grow: 1;
+  display: flex;
+  position: absolute;
+  transform: translateX(0);
+  left: 2.2vw;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.image-container img {
+  width: 20%;
+  height: auto;
+}
+
+.cat-text {
+  font-size: 4.0vh;
+  margin-right: 10px;
+  align-self: center;
+  left: 20%;
+}
+
+.content {
+  background-color: #c66af6;
+  height: calc(100% - 130px);
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1cm;
+  margin-left: 30%;
+  margin-right: 3%;
+  font-size: 2.2vh;
+}
+
+#dynamic-content {
+  width: 100%;
+  padding: 20px;
+  max-height: 60vh;
+  overflow-y: auto;
+  scrollbar-color: rebeccapurple pink;
+  scrollbar-width: thin;
+}
+
+#dynamic-content::-webkit-scrollbar {
+  width: 12px;
+}
+
+#dynamic-content::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+#dynamic-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+#dynamic-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.about-container a {
+  text-decoration: underline;
+  color: pink;
+}
+
+.about-container h3 {
+  font-family: "Yuji Mai", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.tile {
+  flex: 1 1 calc(50% - 20px);
+  background-color: #da8fff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.tile:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #aa00ff;
+}
+
+.tile-header {
+  font-size: 2.5vh;
+  margin-bottom: 10px;
+}
+
+.tile-description {
+  font-size: 2.0vh;
+  color: #555;
+}
+
+.about-container {
+  width: 100%;
+  height: 95%;
+}
+
+.about-container section {
+  margin-bottom: 40px;
+}
+
+.about-container h3 {
+  margin-bottom: 10px;
+}
+
+.about-container ul {
+  padding-left: 20px;
+}
+
+.about-container ul li {
+  margin-bottom: 5px;
+}
+
+.heading-container {
+  margin-bottom: 100px;
+}
+
+#blogs-content {
+  width: 100%;
+}
+
+#blogs-content h2 {
+  font-family: "Yuji Mai", serif;
+  margin-bottom: 15px;
+}
