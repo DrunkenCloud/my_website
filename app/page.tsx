@@ -55,7 +55,7 @@ export default function Home() {
       />
 
       <div className="header">
-        <h1 className="yuji-mai-regular">Niranjhan SU</h1>
+        <h1 className="yuji-mai-regular">DrunkenCloud</h1>
         <nav>
           <ul>
             <li>
